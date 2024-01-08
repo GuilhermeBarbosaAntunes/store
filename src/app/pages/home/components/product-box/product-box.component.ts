@@ -6,5 +6,7 @@ import { Component, Input } from '@angular/core';
 
 })
 export class ProductBoxComponent {
-  @Input() fullWidthMode = true;
+  @Input() fullWidthMode = false;
+
+
 }

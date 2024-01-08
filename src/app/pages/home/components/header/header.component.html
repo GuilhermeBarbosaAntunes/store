@@ -10,20 +10,33 @@
         <a routerLink="cart">View Cart</a>
       </div>
       <div class="flex justify-between font-light mb-2">
-        Keyboard x 1
+        Socket x 1
         <span class="font-bold">{{ "150" | currency }}</span>
       </div>
+      <div class="flex justify-between font-light mb-2">
+        Shoes x 1
+        <span class="font-bold">{{ "250" | currency }}</span>
+      </div>
+      <div class="flex justify-between font-light mb-2">
+        shirt x 1
+        <span class="font-bold">{{ "350" | currency }}</span>
+      </div>
+      <div class="flex justify-between font-light mb-2">
+        Total:
+        <span class="font-bold">{{ "750" | currency }}</span>
+      </div>
       <div class="pt-3 flex justify-between">
-        <button class="bg-red-600 text-white rounded-full w-9 h-9">
+        <button
+          type="button"
+          class="bg-red-600 text-white rounded-full w-8 h-8"
+        >
           <mat-icon>remove_shopping_cart</mat-icon>
         </button>
-        <button class="pt-3 flex justify-between">
-          <mat-icon
-            routerLink="cart"
-            class="bg-green-600 text-white rounded-full w-9 h-9"
-          >
-            shopping_cart
-          </mat-icon>
+        <button
+          type="button"
+          class="bg-green-600 text-white rounded-full w-8 h-8"
+        >
+          <mat-icon routerLink="cart"> shopping_cart </mat-icon>
         </button>
       </div>
     </div>
