@@ -7,6 +7,7 @@ const ROWS_HEIGHT: { [id: number]: number } = { 1: 400, 3: 335, 4: 450 }
   templateUrl: `./home.component.html`
 })
 export class HomeComponent {
+
   cols = 3;
   rowHeight = ROWS_HEIGHT[this.cols];
   category: String | undefined;
@@ -18,5 +19,9 @@ export class HomeComponent {
 
   onShowCategory(newcategory: String): void {
     this.category = newcategory
+  }
+
+  onAddToCart() {
+
   }
 }
