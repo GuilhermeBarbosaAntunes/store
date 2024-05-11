@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { BehaviorSubject } from 'rxjs';
-import { Cart, CartItem } from '../models/cart.model';
+import { Cart, CartItem } from '../types/cart.model';
 
 
 @Injectable({

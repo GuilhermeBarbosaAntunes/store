@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { loadStripe } from '@stripe/stripe-js';
-import { Cart, CartItem } from 'src/app/models/cart.model';
 import { CartService } from 'src/app/services/cart.service';
+import { Cart, CartItem } from 'src/app/types/cart.model';
 
 @Component({
   selector: 'app-cart',
